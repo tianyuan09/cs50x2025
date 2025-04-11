@@ -1,5 +1,4 @@
-# cs50x2025
-[Harvard CS50x 2025](https://cs50.harvard.edu/x/2025/)
+# Harvard [cs50x2025](https://cs50.harvard.edu/x/2025/)
 
 - [x] [Week 0 Scratch](https://cs50.harvard.edu/x/2025/weeks/0/).
      * **Encoding for Number, Character, Image, Video, Sound**:
