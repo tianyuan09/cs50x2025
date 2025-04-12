@@ -1,5 +1,5 @@
-#include <ctype.h>
 #include <cs50.h>
+#include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
@@ -17,15 +17,18 @@ int main(void)
     int words = count_words(text);
     int sentences = count_sentences(text);
     // Compute the Coleman-Liau index (round())
-    int grade = round(0.0588 * (float) letters / (float) words * 100.0 - 0.296 * (float) sentences / (float) words * 100.0 -15.8);
+    int grade = round(0.0588 * (float) letters / (float) words * 100.0 -
+                      0.296 * (float) sentences / (float) words * 100.0 - 15.8);
     // Print the grade level
     if (grade < 1)
     {
         printf("Before Grade 1\n");
-    } else if(grade >= 1 && grade <= 16)
+    }
+    else if (grade >= 1 && grade <= 16)
     {
         printf("Grade %d\n", grade);
-    }else
+    }
+    else
     {
         printf("Grade 16+\n");
     }
@@ -36,10 +39,11 @@ int count_letters(string text)
     int count = 0;
     for (int i = 0; i < strlen(text); i++)
     {
-        // check if a character is a letter (either uppercase or lowercase) and exclude digits, symbols, or whitespace.
-        if(isalpha(text[i]))
+        // check if a character is a letter (either uppercase or lowercase)
+        // and exclude digits, symbols, or whitespace.
+        if (isalpha(text[i]))
         {
-            count ++;
+            count++;
         }
     }
     // Return the number of letters in text
@@ -53,9 +57,9 @@ int count_words(string text)
     for (int i = 0; i < strlen(text); i++)
     {
         // check if a character is a space.
-        if(text[i] == ' ')
+        if (text[i] == ' ')
         {
-            count ++;
+            count++;
         }
     }
     // Return the number of words in text
@@ -70,9 +74,9 @@ int count_sentences(string text)
     for (int i = 0; i < strlen(text); i++)
     {
         // check if a character is a space.
-        if(text[i] == '.' || text[i] == '!' || text[i] == '?')
+        if (text[i] == '.' || text[i] == '!' || text[i] == '?')
         {
-            count ++;
+            count++;
         }
     }
     // Return the number of sentences in text
