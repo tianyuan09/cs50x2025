@@ -1,0 +1,5 @@
+- [ ] Submit Scrabble
+- [ ] Submit Readability
+- [ ] Submit one of:
+  - [ ] Caesar, if feeling less comfortable
+  - [ ] Substitution, if feeling more comfortable
