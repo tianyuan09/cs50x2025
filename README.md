@@ -1,7 +1,7 @@
 # Harvard [cs50x2025](https://cs50.harvard.edu/x/2025/)
 
 - [x] [Week 0 Scratch](https://cs50.harvard.edu/x/2025/weeks/0/).
-     * **Encoding for Number, Character, Image, Video, Sound**:
+     * **Encoding for Number, Character, Image, Video, Sound** [[Slides]](https://gamma.app/docs/Data-Representation-Encoding-5bql9h5qg9u6trv):
        * Number Encoding: Decimal, Binary
        * Character Encoding: ASCII (English only, 7-bit), UTF-8 (multilingual, emojis), UTF-16
        * Image Encoding: RGB (3 bytes per pixel)
